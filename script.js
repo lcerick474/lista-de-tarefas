@@ -2,7 +2,7 @@ const input = document.querySelector("#input");
 const button = document.querySelector("#button");
 const lista = document.querySelector("#lista");
 
-let tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];
+let tarefas = JSON.parse(localStorage.getItem("tarefas")) || [];// lista de tarefas
 
 function salvarTarefas() {
   localStorage.setItem("tarefas", JSON.stringify(tarefas));
